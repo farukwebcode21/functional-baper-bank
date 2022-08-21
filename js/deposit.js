@@ -17,27 +17,6 @@ function setTextElementValueById(elementId, newValue) {
   textElement.innerText = newValue;
 }
 
-// function getCurrentBalance() {
-//   const depositBalance = document.getElementById("balance-total");
-//   const depositBalanceText = depositBalance.innerText;
-//   const totalBalance = parseFloat(depositBalanceText);
-//   return totalBalance;
-// }
-
-// function updateTotalField(depositAmount, isAdd) {
-//   const totalField = document.getElementById();
-//   // const totalText = totalField.innerText;
-//   // const previousBalanceTotal = parseFloat(totalText);
-//   const previousBalanceTotal = getCurrentBalance();
-//   if (isAdd == true) {
-//     totalField.innerText = previousBalanceTotal + depositAmount;
-//   } else {
-//     totalField.innerText = previousBalanceTotal - depositAmount;
-//   }
-// }
-
-// deposit button event click work
-
 document.getElementById("btn-deposit").addEventListener("click", () => {
   const depositAmount = getInputValue("deposit-field");
   const previousDepositTotal = getTextElementValueById("deposit-total");
